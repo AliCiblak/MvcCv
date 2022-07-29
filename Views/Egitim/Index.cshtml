@@ -1,0 +1,59 @@
+﻿@using MvcCv.Models.Entity
+@model List<TblEgitimlerim>
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h2>Egitimler Listesi</h2>
+<br />
+<table class="table table-bordered">
+    <tr>
+        <th>ID</th>
+        <th>Baslık</th>
+        <th>Alt Başlık</th>
+        <th>Alt Başlık 2</th>
+        <th>GNO</th>
+        <th>Tarih</th>
+        <th>Sil</th>
+        <th>Düzenle</th>
+    </tr>
+    @foreach (var item in Model)
+    {
+<tr>
+    <td>
+        @item.ID
+    </td>
+    <td>
+        @item.Baslik
+    </td>
+    <td>
+        @item.AltBaslik
+    </td>
+    <td>
+        @item.AltBaslik2
+    </td>
+    <td>
+        @item.GNO
+    </td>
+    <td>
+        @item.Tarih
+    </td>
+    <td>
+        <a class="btn btn-danger btn-sm" href="/Egitim/EgitimSil/@item.ID">
+            <i class="fa fa-trash"></i>
+            Sil
+        </a>
+    </td>
+    <td>
+        <a class="btn btn-info btn-sm" href="/Egitim/EgitimDuzenle/@item.ID">
+            <!--ID'den gelen değere göre-->
+            <i class="fas fa-pencil-alt"></i>
+            Düzenle
+        </a>
+    </td>
+</tr>
+    }
+</table>
+<a href="/Egitim/EgitimEkle/" class="btn btn-primary">Yeni Eğitim Ekle</a>
+<!--Egitim=EgitimController-->
