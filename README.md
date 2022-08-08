@@ -1,5 +1,5 @@
 <h1>Admin Panelli Dinamik CV Sitesi</h1>
-<p>Murat Yücedağ'ın Mvc5 ile 3 Panelli Kütüphane Yönetim Sistemi Eğitimini temel alarak kodlanmıştır.</p>
+<p>Murat Yücedağ'ın Mvc5 ile admin panelli dinamik cv sitesi eğitimini temel alarak kodlanmıştır.</p>
 <a href="https://www.udemy.com/course/mvc5-ile-sfrdan-admin-panelli-dinamik-cv-sitesi/">Kursa buradan ulaşabilirsiniz.</a>
 
 <h2>Proje İçeriği</h2>
